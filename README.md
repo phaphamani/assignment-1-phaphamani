@@ -24,6 +24,21 @@
 - Security Group open for: TCP 22 (SSH), 6443 (K8s API), 80/443 (web), 10250 (kubelet), UDP 8472 (Flannel VXLAN), NodePort 30000-32767  
 
 ### 2. Prepare Nodes
+### Set the hostname (run separately on each node)
+
+```sh
+# On k3s-master-1
+sudo hostnamectl set-hostname k3s-master-1
+ubuntu@k3s-master-1:~$
+
+# On k3s-master-2 
+sudo hostnamectl set-hostname k3s-master-2
+ubuntu@k3s-master-2:~$
+
+# On k3s-master-3
+sudo hostnamectl set-hostname k3s-master-3
+ubuntu@k3s-master-3:~$
+```
 ```bash
 sudo hostnamectl set-hostname k3s-master-1   # Repeat for 2 & 3
 sudo apt-get update && sudo apt-get upgrade -y
