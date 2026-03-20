@@ -83,6 +83,18 @@ EOF
 curl -sfL https://get.k3s.io | sh -s - server
 sudo kubectl get nodes -o wide
 ```
+![k3_master1_command_1](k3_master1_command_1.png)
+![k3_master1_command_2](k3_master1_command_2.png)
+![k3_master1_command_3](k3_master1_command_3.png)
+
+![k3_master2_command_1](k3_master2_command_1.png)
+![k3_master2_command_2](node2_advertise.png)
+
+![k3_master3_command_1](k3_master3_command_1.png)
+![k3_master3_command_2](k3_master3_command_2.png)
+![k3_master3_command_3](k3_master3_command_3.png)
+![k3_master3_command_4](node3_advertise.png)
+
 
 ### 4. Optional: Configure kubectl locally
 ```bash
